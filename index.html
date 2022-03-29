@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Battery Status API - Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="light-mode-button" onclick="toggle_light_mode()"> Toggle </button>
+    <header>
+      <h1>Battery Status API</h1>
+    </header>
+
+    <main>
+      <h3>Battery Status</h3>
+
+      <div class="container">
+        <div id="level"></div>
+        <div id="battery">
+          <div id="batteryCol"> </div>
+        </div>
+      </div>
+
+      <table class="spec">
+        <tr>
+            <td>Power Source</td>
+            <td id="powerSource"></td>
+        </tr>
+
+        <tr>
+            <td>Charging Status</td>
+            <td id="charge"></td>
+        </tr>
+
+        <tr>
+            <td>Fully charged in</td>
+            <td id="fullyCharged">---</td>
+        </tr>
+
+        <tr>
+            <td>Remaining time</td>
+            <td id="remainingTime">---</td>
+        </tr>
+      </table>
+    </main>
+
+  </body>
+  <script src="script.js" async></script>
+</html>
